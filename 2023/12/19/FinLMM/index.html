@@ -19,25 +19,35 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"huangzy2333.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Welcome to My LLM Word">
-<meta property="og:type" content="website">
-<meta property="og:title" content="LLM">
-<meta property="og:url" content="https://huangzy2333.github.io/index.html">
+    <meta name="description" content="本页将介绍在大语言模型（LLM）时代下关于金融知识图谱的实践。分享分为四个部分，第一部分总体介绍 ChatGPT 的出现给 AI 业内带来的技术方面的冲击，以及在商业方面获得的一些启示；第二部分介绍大语言模型（LLM）自然语言处理新范式，包括 ChatGPT 发展历程、与传统 BERT&#x2F;T5 的区别、训练过程及其优秀的语言理解能力；第三部分介绍大语言模型在金融垂直领域落地的一些探索，大语">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LLM时代的金融知识图谱实践">
+<meta property="og:url" content="https://huangzy2333.github.io/2023/12/19/FinLMM/index.html">
 <meta property="og:site_name" content="LLM">
-<meta property="og:description" content="Welcome to My LLM Word">
+<meta property="og:description" content="本页将介绍在大语言模型（LLM）时代下关于金融知识图谱的实践。分享分为四个部分，第一部分总体介绍 ChatGPT 的出现给 AI 业内带来的技术方面的冲击，以及在商业方面获得的一些启示；第二部分介绍大语言模型（LLM）自然语言处理新范式，包括 ChatGPT 发展历程、与传统 BERT&#x2F;T5 的区别、训练过程及其优秀的语言理解能力；第三部分介绍大语言模型在金融垂直领域落地的一些探索，大语">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://huangzy2333.github.io/FinLMM/fin1.png">
+<meta property="og:image" content="https://huangzy2333.github.io/FinLMM/fin3.png">
+<meta property="og:image" content="https://huangzy2333.github.io/FinLMM/fin2.png">
+<meta property="og:image" content="https://huangzy2333.github.io/FinLMM/fin4.png">
+<meta property="og:image" content="https://huangzy2333.github.io/FinLMM/fin5.png">
+<meta property="og:image" content="https://huangzy2333.github.io/FinLMM/fin6.png">
+<meta property="og:image" content="https://huangzy2333.github.io/FinLMM/fin7.png">
+<meta property="article:published_time" content="2023-12-19T10:58:40.000Z">
+<meta property="article:modified_time" content="2023-12-19T11:31:15.157Z">
 <meta property="article:author" content="Ziyang Huang">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://huangzy2333.github.io/FinLMM/fin1.png">
 
 
-<link rel="canonical" href="https://huangzy2333.github.io/">
+<link rel="canonical" href="https://huangzy2333.github.io/2023/12/19/FinLMM/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://huangzy2333.github.io/2023/12/19/FinLMM/","path":"2023/12/19/FinLMM/","title":"LLM时代的金融知识图谱实践"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>LLM</title>
+<title>LLM时代的金融知识图谱实践 | LLM</title>
   
 
 
@@ -70,7 +80,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">LLM</h1>
+      <p class="site-title">LLM</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -96,7 +106,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -109,6 +119,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-ChatGPT-%E7%9A%84%E5%86%B2%E5%87%BB%E5%92%8C%E5%90%AF%E7%A4%BA"><span class="nav-number">1.</span> <span class="nav-text">1. ChatGPT 的冲击和启示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-LLM%EF%BC%9A%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E6%96%B0%E8%8C%83%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">2. LLM：自然语言处理新范式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-LLM-%E5%9C%A8%E9%87%91%E8%9E%8D%E5%9E%82%E7%9B%B4%E9%A2%86%E5%9F%9F%E7%9A%84%E8%90%BD%E5%9C%B0"><span class="nav-number">3.</span> <span class="nav-text">3. LLM 在金融垂直领域的落地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-LLM-%E8%BE%85%E5%8A%A9%E9%87%91%E8%9E%8D%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA%E7%9A%84%E5%85%B7%E4%BD%93%E6%A1%88%E4%BE%8B"><span class="nav-number">4.</span> <span class="nav-text">4. LLM 辅助金融知识图谱构建的具体案例</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -142,16 +153,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://huangzy2333.github.io/2023/12/19/FinLMM/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -165,13 +177,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | LLM">
+      <meta itemprop="name" content="LLM时代的金融知识图谱实践 | LLM">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/12/19/FinLMM/" class="post-title-link" itemprop="url">LLM时代的金融知识图谱实践</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          LLM时代的金融知识图谱实践
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -203,8 +215,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>本页将介绍在大语言模型（LLM）时代下关于金融知识图谱的实践。分享分为四个部分，第一部分总体介绍 ChatGPT 的出现给 AI 业内带来的技术方面的冲击，以及在商业方面获得的一些启示；第二部分介绍大语言模型（LLM）自然语言处理新范式，包括 ChatGPT 发展历程、与传统 BERT&#x2F;T5 的区别、训练过程及其优秀的语言理解能力；第三部分介绍大语言模型在金融垂直领域落地的一些探索，大语言模型在金融这类垂直领域产生真正有价值的应用，需要做“最后的一公里”或者说“最后的 1%” 的中间层的适配；第四部分介绍 LLM 辅助金融知识图谱构建的具体案例，GPT 优秀的 Zero-shot、Few-shot信息抽取能力，以及如何配合传统的BERT预训练模型做金融垂直领域应用的落地。</p>
+    <div class="post-body" itemprop="articleBody"><p>本页将介绍在大语言模型（LLM）时代下关于金融知识图谱的实践。分享分为四个部分，第一部分总体介绍 ChatGPT 的出现给 AI 业内带来的技术方面的冲击，以及在商业方面获得的一些启示；第二部分介绍大语言模型（LLM）自然语言处理新范式，包括 ChatGPT 发展历程、与传统 BERT&#x2F;T5 的区别、训练过程及其优秀的语言理解能力；第三部分介绍大语言模型在金融垂直领域落地的一些探索，大语言模型在金融这类垂直领域产生真正有价值的应用，需要做“最后的一公里”或者说“最后的 1%” 的中间层的适配；第四部分介绍 LLM 辅助金融知识图谱构建的具体案例，GPT 优秀的 Zero-shot、Few-shot信息抽取能力，以及如何配合传统的BERT预训练模型做金融垂直领域应用的落地。</p>
 <h3 id="1-ChatGPT-的冲击和启示"><a href="#1-ChatGPT-的冲击和启示" class="headerlink" title="1. ChatGPT 的冲击和启示"></a>1. ChatGPT 的冲击和启示</h3><p>一年来有很多关于大语言模型的重大新闻事件，首先是 GPT-4 的发布，紧接着就是百度“文心一言”的发布，之后是微软 365 Copilot 的发布，最近的便是谷歌的Gemini和可能已经部分推送的GPT-4.5。当前正是 NLP 乃至整个 AI 领域大变革的前夜。</p>
 <p>大语言模型在技术上其实并不是一个全新的概念，GPT-3 在 2020 年 5 月就已经发布了，当时普遍认为部署这样一个非常庞大的模型需要消耗大量计算资源，距离实际生产环境的落地还比较远。从实际应用角度来看，还是要继续聚焦在 BERT 为代表的这类常规的预训练模型。</p>
 <p>2022 年 11 月 30 号 ChatGPT 发布，人们对这个大语言模型能力的认知发生了重大转变。以前在业内，如果听到高谈阔论要实现 AGI（通用人工智能），大家基本都认定为不靠谱。当年 Elon Musk 大谈 AI 对人类威胁的时候，业内绝大部分人都是不以为然的。自从 ChatGPT 发布后，开始觉得未来实现 AGI 虽然还不是那么确定，但是貌似确实有了具有更高的可能性。</p>
@@ -232,7 +243,6 @@
 <p>另外一个实际场景就是利用 LLM 协助进行数据查询。因为 LLM 本身并不能提供可靠的信息查询，所以需要利用外部的工具来获取可靠的数据。但我们是可以利用 LLM 强大的语言理解能力来协助生成外部数据的查询代码，实现将用户输入的自然语言问题自动转换为特定数据库（关系数据库，或图数据库，或全文检索系统）所使用查询语言或者 API。最近也有研究者使用 GPT-3 的 API 对 text2SQL 进行了 Zero-shot 的评测，在 Spider 数据集上执行正确率就可达到 67%。<img src="/FinLMM/fin7.png" alt="案例"></p>
 <p>最后总结一下如何利用 LLM 合理进行模型落地。我们需要考虑实际应用场景和模型训练部署整个生命周期的综合成本，LLM 实际部署还要考虑调用 LLM 的 API 的延迟和成本的问题，还有可能访问限制的问题。利用 ChatGPT 等大型语言模型（LLM）出色的小样本学习能力，可以大大提高在某些训练数据获取相对困难的应用场景中的效率。还有一些情况下，因为数据安全的要求，需要进行本地化部署。也可以利用 LLM 高效地产生一批质量良好的金融专业领域的标注数据，然后用它来微调 BERT&#x2F;T5 等常规的预训练模型进行部署。</p>
 
-      
     </div>
 
     
@@ -240,89 +250,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/12/15/hello-world/" rel="prev" title="探索LLMs在关键领域的实践">
+                  <i class="fa fa-angle-left"></i> 探索LLMs在关键领域的实践
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://huangzy2333.github.io/2023/12/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ziyang Huang">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="LLM">
-      <meta itemprop="description" content="Welcome to My LLM Word">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | LLM">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/12/15/hello-world/" class="post-title-link" itemprop="url">探索LLMs在关键领域的实践</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-12-15 20:36:18" itemprop="dateCreated datePublished" datetime="2023-12-15T20:36:18+08:00">2023-12-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-12-19 18:35:37" itemprop="dateModified" datetime="2023-12-19T18:35:37+08:00">2023-12-19</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>欢迎来到LLM新时代：在这里，我们将探索大型语言模型如何在临床、法律和金融领域引领变革。</p>
-<h3 id="关键领域"><a href="#关键领域" class="headerlink" title="关键领域"></a>关键领域</h3><p>在医疗领域，LLMs正在帮助医生进行更准确的病情分析；<br>在法律领域，它们为律师提供文档自动审阅服务；<br>在金融领域，则通过深入分析市场数据支持更明智的决策。</p>
-<h3 id="资源和学习"><a href="#资源和学习" class="headerlink" title="资源和学习"></a>资源和学习</h3><p>下面分享了一些很棒的领域大模型，一键直达！<br>金融：<a target="_blank" rel="noopener" href="https://github.com/ai4finance-foundation/fingpt">FinGPT</a><br>医疗：<a target="_blank" rel="noopener" href="https://arxiv.org/abs/2310.05694">Healthcare</a><br>法律：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41185868/article/details/132012789">法律行业主流大模型</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
